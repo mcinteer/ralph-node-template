@@ -6,5 +6,5 @@
 - [/] Implement Identity Provider (Login with Google) [passes: false] (See @specs/003-identity-provider.md)
   - [x] Initialize Next.js and Prisma [passes: true]
   - [x] Configure Auth.js with Google Provider [passes: true]
-  - [ ] Create UI for Home and Profile pages [passes: false]
+  - [x] Create UI for Home and Profile pages [passes: true]
   - [ ] Verify end-to-end Login/Logout flow [passes: false]

@@ -1,8 +1,7 @@
-Task completed: Configured Auth.js with Google Provider.
+Task completed: Created UI for Home and Profile pages.
 Key decisions:
-- Created auth.ts with PrismaAdapter and Google Provider.
-- Set up API route at app/api/auth/[...nextauth]/route.ts.
-- Added middleware.ts for session protection.
-- Created tsconfig.json with path aliases.
-- Created .env.example with required variables.
-Notes for next run: Create UI components for Home and Profile pages.
+- Created auth-components.tsx with server actions for sign-in/sign-out.
+- Implemented Home page with conditional session rendering.
+- Implemented Profile page with user details and Google avatar support.
+- Configured next.config.ts to allow Google images.
+Notes for next run: Final verification of the flow.

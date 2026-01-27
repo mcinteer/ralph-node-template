@@ -68,5 +68,5 @@ To make this work, the user must:
 
 - [x] Initialize Next.js and Prisma [passes: true]
 - [x] Configure Auth.js with Google Provider [passes: true]
-- [ ] Create UI for Home and Profile pages [passes: false]
+- [x] Create UI for Home and Profile pages [passes: true]
 - [ ] Verify end-to-end Login/Logout flow [passes: false]
