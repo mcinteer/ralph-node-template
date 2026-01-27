@@ -1,0 +1,5 @@
+# Session Progress
+- Loop initialized.
+- Initialized project structure: Added README.md, fixed markdown lint errors.
+- Installed markdownlint-cli locally and updated scripts/lint.sh.
+- Ready for Ralph Loop verification.
