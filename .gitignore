@@ -5,3 +5,13 @@ node_modules/
 
 /generated/prisma
 .npm-cache
+.next/
+out/
+build/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+dev.db
+dev.db-journal
