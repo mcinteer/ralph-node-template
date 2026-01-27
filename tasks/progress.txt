@@ -1,7 +1,8 @@
-Task completed: Initialized Next.js and Prisma for Identity Provider.
+Task completed: Configured Auth.js with Google Provider.
 Key decisions:
-- Used Next.js App Router structure.
-- Configured Prisma with SQLite and Auth.js models.
-- Fixed lint errors in spec 003.
-- Created lib/prisma.ts for database access.
-Notes for next run: Configure Auth.js with Google Provider.
+- Created auth.ts with PrismaAdapter and Google Provider.
+- Set up API route at app/api/auth/[...nextauth]/route.ts.
+- Added middleware.ts for session protection.
+- Created tsconfig.json with path aliases.
+- Created .env.example with required variables.
+Notes for next run: Create UI components for Home and Profile pages.
