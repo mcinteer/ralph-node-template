@@ -4,3 +4,4 @@
 - Installed markdownlint-cli locally and updated scripts/lint.sh.
 - Ready for Ralph Loop verification.
 - Verified Ralph Loop: Successfully ran ralph-once.sh, confirmed linting and task management workflow.
+- Started "Full Project Template" (Spec 002): Created .pi/AGENTS.md, notes/ directory, and specs/README.md.
