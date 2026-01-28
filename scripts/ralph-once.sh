@@ -9,9 +9,12 @@ CONTEXT_FILES="@specs/ @tasks/backlog.md @tasks/progress.txt"
 PROMPT="You are operating in a Ralph Loop. Follow these instructions strictly:
 
 1. DECIDE: Read 'tasks/backlog.md' (source of truth). Pick the next task with '[passes: false]'. Prioritize architectural decisions and integration points over polish.
-2. CONTEXT: Refer to relevant specs in 'specs/' and '.pi/AGENTS.md' to ensure implementation matches requirements and quality standards.
-3. EXECUTE: Implement the task in a SINGLE small, logical step. One logical change per commit. If a task is too large, break it down.
-4. QUALITY: Before committing, run 'scripts/lint.sh' and any available tests. If they fail, fix the issues.
+2. CONTEXT: Refer to relevant specs in 'specs/' and '.pi/AGENTS.md' (LTS Laws, quality standards).
+3. EXECUTE: Implement the task in a SINGLE small, logical step. Always use LTS/Stable versions of libraries.
+4. QUALITY: Before committing, you MUST run 'scripts/check.sh'. 
+   - If it fails, you are in a 'Broken Build' state. 
+   - Your ONLY priority is fixing the build. 
+   - Do NOT commit broken code.
 5. LOG: Append a concise summary to 'tasks/progress.txt' (Task completed, key decisions, notes for next run).
 6. COMMIT: Make a git commit of your changes.
 7. COMPLETE: If all work in the backlog is finished, output <promise>COMPLETE</promise>.
@@ -19,7 +22,6 @@ PROMPT="You are operating in a Ralph Loop. Follow these instructions strictly:
 ONLY WORK ON ONE FEATURE PER ITERATION. Quality over speed. Fight entropy."
 
 # 3. Execution
-# Note: Using 'pi' as the agent runner
-# We pass the prompt as the first argument, and file paths are handled by the agent's context loading
-pi "Follow the instructions in the attached files to complete the next task.
+# Note: Using 'pi' as the agent runner with a 15-minute timeout
+timeout 900 pi "Follow the instructions in the attached files to complete the next task.
 $PROMPT" "specs/" "tasks/backlog.md" "tasks/progress.txt"

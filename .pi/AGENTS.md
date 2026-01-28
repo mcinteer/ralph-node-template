@@ -1,13 +1,19 @@
-# Agent Instructions
+# Project Agent Instructions
 
-## Engineering Standards
-- This codebase will outlive you. Fight entropy. Leave it better than you found it.
-- Prioritize architectural decisions and integration points over polish.
-- Write production-ready, maintainable code.
-- Every change should be a small, logical step with a clear purpose.
+## Quality Standards
+- **Fight Entropy**: Leave the codebase cleaner than you found it.
+- **Production Grade**: No "todo" comments in code. No console.logs in production paths.
+- **LTS Only**: 
+  - Always use Long-Term Support (LTS) versions for Node.js (v20 or v22).
+  - Use stable major versions for all dependencies. 
+  - **PROHIBITED**: Alpha, Beta, RC, or Experimental releases are forbidden unless explicitly requested in a spec.
 
-## Workflow
-- Always refer to `specs/` for requirements.
-- Update `tasks/backlog.md` and `tasks/progress.txt` regularly.
-- Run `scripts/lint.sh` before committing changes.
-- If a task is too large, break it down into smaller, manageable sub-tasks.
+## Patterns
+- Next.js 15 (LTS preferred patterns)
+- Auth.js v5 (Stable)
+- Prisma (Stable)
+- Tailwind CSS (Stable)
+
+## Verification
+- You must run `scripts/check.sh` before every commit. 
+- A failure in the check script is a failure of the task.
