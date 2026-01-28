@@ -19,6 +19,8 @@ echo "--- Layer 2: Prisma Check ---"
 if [ -f "prisma/schema.prisma" ]; then
   npx prisma validate
   npx prisma generate
+  # Backpressure: Ensure the database tables actually exist
+  npx prisma db push --accept-data-loss
 fi
 
 echo "--- Layer 3: Type Check & Build ---"

@@ -1,5 +1,6 @@
 # Backlog
 
+- [x] Fix 'Table main.Account does not exist' error by syncing database [passes: true]
 - [x] Fix PrismaClient initialization error and Middleware deprecation warning [passes: true]
 - [x] Initialize the project structure [passes: true] (See @specs/001-minimal-ralph-loop.md)
 - [x] Verify the Ralph Loop works by running once [passes: true] (See @specs/001-minimal-ralph-loop.md)
