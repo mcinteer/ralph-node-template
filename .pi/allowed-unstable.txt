@@ -1,0 +1,3 @@
+# Required for Next.js App Router support (v5 is still in beta)
+next-auth
+@auth/prisma-adapter

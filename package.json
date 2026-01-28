@@ -1,15 +1,10 @@
 {
-  "name": "dev_setup",
+  "name": "ralph-node-template",
   "version": "1.0.0",
-  "description": "A minimal environment for the Pi agent to run in an autonomous loop.",
-  "main": "index.js",
+  "description": "The Golden Path for AI-driven development with Ralph Wiggum.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:docs": "markdownlint specs/*.md tasks/*.md"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
     "markdownlint-cli": "^0.47.0"
   }

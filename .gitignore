@@ -2,16 +2,25 @@ node_modules/
 .venv/
 .DS_Store
 *.log
+.npm-cache/
+.npm/
 
-/generated/prisma
-.npm-cache
+# Next.js
 .next/
 out/
 build/
+
+# Prisma / DB
+/generated/prisma
+dev.db
+dev.db-journal
+
+# Env
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-dev.db
-dev.db-journal
+
+# Ralph
+.complete

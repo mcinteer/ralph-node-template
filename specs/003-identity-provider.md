@@ -66,7 +66,9 @@ To make this work, the user must:
 
 ## Backlog Preview
 
-- [x] Initialize Next.js and Prisma [passes: true]
-- [x] Configure Auth.js with Google Provider [passes: true]
-- [x] Create UI for Home and Profile pages [passes: true]
-- [x] Verify end-to-end Login/Logout flow [passes: true]
+- [ ] Initialize Next.js and Prisma [passes: false]
+- [ ] Configure Auth.js with Google Provider [passes: false]
+- [ ] Implement Database Backpressure script [passes: false]
+- [ ] Implement Code Coverage Backpressure script (80% threshold) [passes: false]
+- [ ] Create UI for Home and Profile pages [passes: false]
+- [ ] Verify end-to-end Login/Logout flow [passes: false]
